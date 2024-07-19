@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .blue-bar {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2cm;
+            background-color: rgb(11, 11, 68);
+            z-index: 1; /* Asegura que la barra esté encima del iframe */
+        }
+        .blue-bar.top {
+            top: 0;
+        }
+        .blue-bar.bottom {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="https://lumalabs.ai/embed/f08166a2-c0eb-4fa9-a496-284fcf4cb98b?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" title="luma embed"></iframe>
+        <div class="blue-bar top"></div>
+        <div class="blue-bar bottom"></div>
+    </div>
+</body>
+</html>
